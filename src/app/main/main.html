@@ -1,35 +1,45 @@
-<div class="container">
-
-  <div ng-include="'components/navbar/navbar.html'"></div>
-
-  <div class="row">
-    <div class="large-12 large-text-center columns">
-      <div class="panel">
-        <h1>'Allo, 'Allo!</h1>
-        <img src="assets/images/yeoman.png" alt="I'm Yeoman"><br>
-        <p>Always a pleasure scaffolding your apps.</p>
-        <p><a class="button radius" ng-href="#">Splendid!</a></p>
+<div class="head">
+  <div class="row contain-to-grid">
+    <top-bar>
+      <ul class="columns small-5 title-area">
+        <li class="name">
+         <a href="/">
+            <img src="assets/images/logo.png" />
+          </a>
+        </li>
+      </ul>
+      <div class="menu-top">
+        <!-- Left Nav Section -->
+        <ul class="left menus">
+          <li class="menu-item">
+            <a href="#">Trang chủ</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">Hoạt động</a>
+          </li>
+          <li class="menu-item active">
+            <a href="#">Thảo luận</a>
+          </li>
+        </ul>
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li class="has-form notification notification" notification-dropdown-button>
+          <a href="#"><img src="assets/images/noti.png" /></a>
+          </li>
+          <li class="has-form setting">
+            <a dropdown-toggle="#dropdown-setting" class="button2">
+              <img src="assets/images/setting.png" alt="" />
+            </a>
+            <ul id="dropdown-setting" class="f-dropdown" dropdown-align="right">
+              <li><a href="/setting/account">Cài đặt</a></li>
+              <li><a ng-click="showShortcutPopup()">Phím tắt bàn phím</a></li>
+              <li><a ng-click="logout()">Đăng xuất</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
+    </top-bar>
+    <div class="row">
+      
     </div>
   </div>
-
-  <div class="row">
-    <div class="large-4 columns" ng-repeat="awesomeThing in awesomeThings | orderBy:'rank'">
-      <div class="th">
-        <img class="right" ng-src="assets/images/{{awesomeThing.logo}}" alt="{{awesomeThing.title}}">
-        <div class="caption">
-          <h3>{{awesomeThing.title}}</h3>
-          <p>{{awesomeThing.description}}</p>
-          <p><a ng-href="{{awesomeThing.url}}">{{awesomeThing.url}}</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="large-12 columns">
-      <hr>
-      <p>With ♥ from <a href="https://twitter.com/Swiip">@Swiip</a></p>
-    </div>
-  </div>
-</div>
