@@ -1,0 +1,97 @@
+<div class="head">
+  <div class="row contain-to-grid">
+    <top-bar>
+      <ul class="columns small-5 title-area">
+        <li class="name">
+         <a href="/">
+            <img src="assets/images/logo.png" />
+          </a>
+        </li>
+      </ul>
+      <div class="menu-top">
+        <!-- Left Nav Section -->
+        <ul class="left menus">
+          <li class="menu-item">
+            <a href="#">Trang chủ</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">Hoạt động</a>
+          </li>
+          <li class="menu-item active">
+            <a href="#">Thảo luận</a>
+          </li>
+        </ul>
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li class="has-form notification notification" notification-dropdown-button>
+          <a href="#"><img src="assets/images/noti.png" / class="img-noti"></a>
+          <span class="count-noti">2</span>
+          </li>
+          <li class="has-form setting">
+            <a dropdown-toggle="#dropdown-setting" class="button2">
+              <img src="assets/images/setting.png" alt="" />
+            </a>
+            <ul id="dropdown-setting" class="f-dropdown" dropdown-align="right">
+              <li><a href="/setting/account">Cài đặt</a></li>
+              <li><a ng-click="showShortcutPopup()">Phím tắt bàn phím</a></li>
+              <li><a ng-click="logout()">Đăng xuất</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </top-bar>
+    <div class="row ">
+      
+    </div>
+  </div>
+</div>
+<!-- Container -->
+<div id="content">
+  <div class="row">
+        <div class="large-12 columns content-forum">
+          <div class="row">
+            <div class="small-8 columns">
+              <p class="thread-title-forum">Các chủ đề</p>
+            </div>
+            <div class="small-8 columns">
+              <a class="button-post-thread-forum" href="" title="">Thảo luận chủ đề</a>
+            </div>
+          </div>
+          <div class="row thread-post">
+                <p class="avatar-threadpost"></p>
+                <p class="showicon"></p>
+                <div class="the-post">
+                  <a href="#" class="the-title">Học như thế nào một ngày qua một kỹ năng?</a>
+                  <p class="user">
+                    <a href="#" class="admin">Linkshady</a>,  
+                    <a class="like2" href="#"><img src="assets/images/images1.jpg"></a><span class="count-trick">78</span>
+                    <a class="dislike2" href="#"><img src="assets/images/images2.jpg"></a><span class="count-trick">78</span>
+                  </p>
+                   29/7/2014 -<a href="#" class="memo">Tiếng Đức</a><br/>
+
+                  <span>Theme này là một trong những Theme nổi tiếng nhất bởi nó có lượt tải về ... biểu tượng ứng dụng cũng như những hình ảnh nền trên điện thoại của bạn.</span><br/>
+                  <a class="like2" href="#"><img src="assets/images/like.jpg"></a><span class="count-like">78</span>
+                    <a class="dislike2" href="#"><img src="assets/images/unlike.jpg"></a><span class="count-like">78</span>
+                </div>
+            </div>
+        </div>
+        <div class="large-4 columns sidebar-forum">
+          <div class="row search-forum">
+              <input type="text" name="search" value="Tìm kiếm chủ đề..." onfocus="if (this.value==this.defaultValue) this.value = ''" onblur="if (this.value=='') this.value = this.defaultValue"/>
+          </div>
+          <div class="row channel-flow">
+            <p>Kênh theo dõi</p>
+             <ul class="choose-channel">
+               <li><a class="choose-vn" href="#">Memo Tiếng Việt</a></li>
+               <li><a class="choose-eng" href="#">Tiếng Anh</a></li>
+               <li><a class="choose-gem" href="#">Tiếng Đức</a></li>
+               <li><a class="choose-fr" href="#">Tiếng Pháp</a></li>
+             </ul>
+             <a class="fix" href="#">Sửa</a>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+ 
